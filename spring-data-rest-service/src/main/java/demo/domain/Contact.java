@@ -7,7 +7,6 @@ import javax.persistence.Id;
 
 @Entity
 public class Contact {
-
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private long id;
@@ -17,6 +16,10 @@ public class Contact {
 
 	private String email;
 	private String phone;
+
+	public long getId() {
+		return id;
+	}
 
 	public String getFirstName() {
 		return firstName;
